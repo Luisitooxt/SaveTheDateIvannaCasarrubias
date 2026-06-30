@@ -26,7 +26,7 @@
       </article>
 
       <article class="story-photo story-photo-right">
-        <img src="/images/photo32.jpg" alt="Ivanna foto 32" />
+        <img src="/images/photo69.jpg" alt="Ivanna foto 32" />
         <div class="photo-caption">
           <span>03</span>
           <p>Celebración</p>

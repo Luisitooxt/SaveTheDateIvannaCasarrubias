@@ -19,7 +19,7 @@
       </article>
 
       <article class="editorial-side editorial-right">
-        <img src="/images/photo28.jpg" alt="Ivanna foto 28" />
+        <img src="/images/photo333.jpg" alt="Ivanna foto 28" />
       </article>
 
       <div class="editorial-note note-one">
@@ -29,7 +29,7 @@
 
       <div class="editorial-note note-two">
         <span>Código de vestimenta</span>
-        <p>Formal · Elegante </p>
+        <p>Formal · Elegante</p>
       </div>
     </div>
   </section>
@@ -307,92 +307,111 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .editorial-collage-section {
-    padding: 78px 16px;
+    min-height: 100svh;
+    padding: 72px 14px 96px;
+  }
+
+  .editorial-bg-word {
+    font-size: 6.5rem;
+    top: 4%;
+  }
+
+  .editorial-heading {
+    margin-bottom: 26px;
+  }
+
+  .editorial-heading p {
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+  }
+
+  .editorial-heading h2 {
+    font-size: clamp(2.1rem, 11vw, 3.5rem);
+    line-height: 0.92;
+  }
+
+  .editorial-heading span {
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
   }
 
   .editorial-layout {
-    min-height: 720px;
-  }
-
-  .editorial-left {
-    left: 0;
-    top: 4%;
-    width: 180px;
-    height: 260px;
-  }
-
-  .editorial-right {
-    right: 0;
-    bottom: 4%;
-    width: 180px;
-    height: 260px;
+    min-height: 760px;
   }
 
   .editorial-newspaper {
-    width: min(76vw, 340px);
+    width: min(76vw, 288px);
+    top: 26px;
+    z-index: 6;
+  }
+
+  .editorial-left {
+    width: 120px;
+    height: 176px;
+    left: -8px;
+    top: 118px;
+    z-index: 5;
+  }
+
+  .editorial-right {
+    width: 120px;
+    height: 176px;
+    right: -8px;
+    bottom: 18px;
+    z-index: 5;
   }
 
   .editorial-note {
-    width: 190px;
-    padding: 16px 14px;
+    width: 150px;
+    padding: 12px 10px;
+  }
+
+  .editorial-note span {
+    font-size: 0.46rem;
   }
 
   .editorial-note p {
-    font-size: 1.05rem;
-  }
-
-  .note-one {
-    left: 2%;
-    bottom: 26%;
+    font-size: 0.9rem;
   }
 
   .note-two {
-    right: 2%;
-    top: 18%;
+    right: 18px;
+    top: 126px;
+    left: auto;
+    bottom: auto;
+    transform: rotate(-4deg);
+    z-index: 8;
+  }
+
+  .note-one {
+    left: 12px;
+    bottom: 28px;
+    right: auto;
+    top: auto;
+    transform: rotate(-5deg);
+    z-index: 8;
   }
 }
 
-@media (max-width: 520px) {
-  .editorial-heading {
-    margin-bottom: 34px;
-  }
-
+@media (max-width: 390px) {
   .editorial-layout {
-    min-height: 680px;
-  }
-
-  .editorial-left {
-    left: -12px;
-    top: 0;
-    width: 140px;
-    height: 205px;
-  }
-
-  .editorial-right {
-    right: -12px;
-    bottom: 8px;
-    width: 140px;
-    height: 205px;
+    min-height: 730px;
   }
 
   .editorial-newspaper {
-    width: min(84vw, 310px);
+    width: min(78vw, 270px);
   }
 
   .editorial-note {
-    width: 160px;
+    width: 140px;
   }
 
-  .note-one {
-    left: 0;
-    bottom: 25%;
-  }
-
-  .note-two {
-    right: 0;
-    top: 16%;
+  .editorial-left,
+  .editorial-right {
+    width: 112px;
+    height: 164px;
   }
 }
 </style>

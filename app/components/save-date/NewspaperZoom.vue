@@ -302,85 +302,97 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .newspaper-zoom-section {
-    padding: 74px 16px;
+    min-height: 100svh;
+    padding: 72px 14px 96px;
   }
 
-  .zoom-stage {
-    min-height: 620px;
+  .zoom-bg-text {
+    font-size: 6.5rem;
+    top: 4%;
   }
 
-  .newspaper-main {
-    width: min(78vw, 360px);
-  }
-
-  .zoom-card {
-    width: 210px;
-    padding: 18px 16px;
-  }
-
-  .zoom-card h3 {
-    font-size: 1.35rem;
-  }
-
-  .zoom-card-one {
-    left: 0;
-    top: 2%;
-  }
-
-  .zoom-card-two {
-    right: 0;
-    top: auto;
-    bottom: 5%;
-  }
-
-  .zoom-card-three {
-    left: 50%;
-    bottom: 22%;
-    transform: translateX(-50%) rotate(2deg);
-  }
-}
-
-@media (max-width: 520px) {
   .news-intro {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+  }
+
+  .news-intro p {
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+  }
+
+  .news-intro h2 {
+    font-size: clamp(2.1rem, 11vw, 3.5rem);
+    line-height: 0.92;
+  }
+
+  .news-intro span {
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
   }
 
   .zoom-stage {
-    min-height: 560px;
+    min-height: 730px;
   }
 
   .newspaper-main {
-    width: min(84vw, 320px);
+    width: min(78vw, 292px);
+    top: 10px;
   }
 
   .zoom-card {
-    width: 170px;
-    padding: 15px 14px;
+    width: 148px;
+    padding: 12px 11px;
   }
 
   .zoom-card span {
-    font-size: 0.52rem;
+    font-size: 0.46rem;
   }
 
   .zoom-card h3 {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
   }
 
   .zoom-card-one {
-    left: -4px;
-    top: 0;
+    left: 6px;
+    top: 76px;
+    right: auto;
+    bottom: auto;
+    transform: rotate(-5deg);
+    z-index: 8;
   }
 
   .zoom-card-two {
-    right: -4px;
-    bottom: 1%;
+    left: 18px;
+    bottom: 18px;
+    right: auto;
+    top: auto;
+    transform: rotate(-4deg);
+    z-index: 8;
   }
 
   .zoom-card-three {
-    left: 50%;
-    bottom: 18%;
+    right: 16px;
+    bottom: 54px;
+    left: auto;
+    top: auto;
+    transform: rotate(4deg);
+    z-index: 8;
+  }
+}
+
+@media (max-width: 390px) {
+  .zoom-stage {
+    min-height: 700px;
+  }
+
+  .newspaper-main {
+    width: min(80vw, 270px);
+  }
+
+  .zoom-card {
+    width: 138px;
   }
 }
 </style>
