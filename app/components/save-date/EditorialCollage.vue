@@ -18,9 +18,9 @@
         <img src="/images/newspaper.jpg" alt="Periódico completo Save the Date" />
       </article>
 
-      <article class="editorial-side editorial-right">
-        <img src="/images/photo333.jpg" alt="Ivanna foto 28" />
-      </article>
+     <article class="editorial-side editorial-right">
+  <img :src="'/images/photo334-final.jpg'" alt="Ivanna foto derecha editorial" />
+</article>
 
       <div class="editorial-note note-one">
         <span>Última hora</span>

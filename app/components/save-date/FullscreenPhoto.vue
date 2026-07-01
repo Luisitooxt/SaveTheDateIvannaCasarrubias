@@ -76,7 +76,7 @@
   text-align: center;
   color: #f3eadf;
   padding: 34px 24px;
-  margin-top: 18px;
+  margin-top: 95px;
   animation: fullscreenContentIn 1.2s ease both;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .fullscreen-content::before {
-  top: 0;
+  top: -42px;
 }
 
 .fullscreen-content::after {
@@ -236,60 +236,132 @@
   }
 }
 
+/* MOBILE */
 @media (max-width: 720px) {
   .fullscreen-photo-section {
     min-height: 100svh;
+    align-items: flex-start;
   }
 
   .photo-bg img {
-    object-position: center;
+    object-position: center top;
   }
 
   .fullscreen-overlay {
     background:
-      radial-gradient(circle at 50% 26%, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.64) 68%, rgba(0, 0, 0, 0.86) 100%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.78));
+      radial-gradient(circle at 50% 23%, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.56) 62%, rgba(0, 0, 0, 0.86) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.78));
   }
 
   .fullscreen-content {
     width: 94%;
+    max-width: 390px;
     padding: 30px 14px;
-    margin-top: 0;
+    margin-top: 275px;
+  }
+
+  .fullscreen-content::before {
+    top: -58px;
+    width: 72%;
+  }
+
+  .fullscreen-content::after {
+    bottom: 0;
+    width: 72%;
   }
 
   .fullscreen-content p {
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     letter-spacing: 0.22em;
+    margin-bottom: 15px;
+  }
+
+  .fullscreen-content h2 {
+    font-size: clamp(3.05rem, 15vw, 4.35rem);
+    line-height: 0.78;
+  }
+
+  .fullscreen-content h2 span {
+    margin: 10px 0;
+  }
+
+  .fullscreen-divider {
+    width: min(320px, 72%);
+    margin: 19px auto 17px;
   }
 
   .fullscreen-info {
-    padding: 15px 14px;
-  }
-
-  .fullscreen-badge {
-    width: 76px;
-    height: 76px;
-    right: 20px;
-    bottom: 24px;
-    font-size: 1.85rem;
-  }
-
-  .fullscreen-content small {
-    font-size: 0.66rem;
-  }
-}
-
-@media (max-width: 430px) {
-  .fullscreen-content h2 {
-    font-size: clamp(3.3rem, 17vw, 4.8rem);
+    width: 94%;
+    padding: 14px 12px;
   }
 
   .fullscreen-content h3 {
-    letter-spacing: 0.13em;
+    font-size: 1.02rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
   }
 
   .fullscreen-content strong {
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+
+  .fullscreen-content small {
+    font-size: 0.6rem;
     letter-spacing: 0.1em;
+  }
+
+  .fullscreen-badge {
+    width: 72px;
+    height: 72px;
+    right: 18px;
+    bottom: 24px;
+    font-size: 1.75rem;
+  }
+}
+
+/* iPhone y pantallas angostas */
+@media (max-width: 430px) {
+  .fullscreen-content {
+    margin-top: 285px;
+  }
+
+  .fullscreen-content::before {
+    top: -62px;
+  }
+
+  .fullscreen-content h2 {
+    font-size: clamp(2.95rem, 14vw, 4.1rem);
+  }
+
+  .fullscreen-content h3 {
+    letter-spacing: 0.11em;
+  }
+
+  .fullscreen-content strong {
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 390px) {
+  .fullscreen-content {
+    margin-top: 270px;
+  }
+
+  .fullscreen-content h2 {
+    font-size: clamp(2.65rem, 14vw, 3.75rem);
+  }
+
+  .fullscreen-info {
+    padding: 12px 10px;
+  }
+
+  .fullscreen-badge {
+    width: 66px;
+    height: 66px;
+    font-size: 1.6rem;
   }
 }
 </style>
